@@ -1,4 +1,4 @@
-# iMLAGA: Integrated machine learning and genetic algorithm
+# iMLGAM: integrated Machine Learning and Genetic Algorithm-driven Multiomics analysis for pan-Cancer immunotherapy response prediction
 
 ## Overview
 
