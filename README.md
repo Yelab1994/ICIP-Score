@@ -1,17 +1,3 @@
-# iMLAGA: Integrated machine learning and genetic algorithm
+# iMLAGA: Integrated Machine Learning and Genetic Algorithm
 
-## Overview
-
-This repository contains data and code related to the study of predictive models for pan-cancer immunotherapy. The purpose of this study is to construct a signature based on RNA sequencing data to predict the outcomes of immunotherapy in patients with pan-cancer.
-
-## Directory Structure
-
-- `Figure1`, `Figure2`, ...: Directories for saving generated figures.
-- The source code of the iMLAGA package.
-
-## Prerequisites
-
-Make sure you have R and the following packages installed: iMLAGA. Install "iMLAGA" via this [GitHub page](https://github.com/Yelab1994/iMLAGA) or by running the following code in R:
-
-```R
-devtools::install_github("Yelab1994/iMLAGA")
+This repository contains data and code related to the study of predictive models for pan-cancer immunotherapy. The purpose of this study is to construct a signature based on RNA sequencing data to predict the outcomes of immunotherapy in patients with pan-cancer. The directory structure includes Figure1 and Figure2 for saving generated figures, the src directory for the source code of the iMLAGA package, and this README file. Make sure you have R and the following package installed: `iMLAGA`. Install it via this GitHub page or by running `devtools::install_github("Yelab1994/iMLAGA")`. Feedback and contributions to this analysis are welcome. For questions or issues related to the analysis, please raise an issue on the repository or contact: 102125@yzpc.edu.cn.
