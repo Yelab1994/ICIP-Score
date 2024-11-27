@@ -18,7 +18,7 @@ devtools::install_github("Yelab1994/iMLAGA")
 Contributing
 Feedback and contributions to this analysis are welcome. If you have any suggestions or find any issues, please submit a pull request or an issue on the repository.
 
-Contact
+## Contact
 For questions or issues related to the analysis, please raise an issue on the repository or contact:
 
 102125@yzpc.edu.cn
