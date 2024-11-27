@@ -6,7 +6,7 @@ This repository contains data and code related to the study of predictive models
 
 ## Directory Structure
 
-- `Figure1`, `Figure2`, ...: Directories for saving generated figures.
+- `Figure1`, `Figure2`, ...: Data and original code for saving generated figures.
 - The source code of the iMLAGA package.
 
 ## Prerequisites
