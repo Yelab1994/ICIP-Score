@@ -20,15 +20,21 @@ devtools::install_github("Yelab1994/iMLGAM")
 Download sample files via this [Baidu Netdisk page](https://pan.baidu.com/s/1DmL1MBvDnn4JT798wFRoSQ?pwd=h527) and load the necessary R packages.
 
 ```R
+#load the necessary R packages
 library(qs)
 library(abess)
 library(iMLGAM)
+#Read the example file
 dat <- qread("ICI cohort gene pairs.qs")
+#the first column is the outcome (with row names as 'res'), and the subsequent columns are features.
 for (i in names(dat)) {
   dat[[i]] <- dat[[i]][,-c(1,3,4)]
   colnames( dat[[i]])[1] <- "res"
-} #the first column is the outcome (with row names as 'res'), and the subsequent columns are features.
-trainset <- dat$trainset_7  #Determine the training set
-validationset <- dat$trainset_3 #Determine the validation set
-testset <- dat$testset  #Determine the test set 
+}
+#Determine the training set
+trainset <- dat$trainset_7
+#Determine the validation set
+validationset <- dat$trainset_3
+#Determine the test set 
+testset <- dat$testset 
 ```
