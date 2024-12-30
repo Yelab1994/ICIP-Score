@@ -17,7 +17,7 @@ Make sure you have R and the following packages installed: iMLAGA. Install "iMLA
 devtools::install_github("Yelab1994/iMLGAM")
 ```
 ## Step 1: Constructing Base Learners
-Download sample files via this [Baidu Netdisk page]([https://pan.baidu.com/s/1DmL1MBvDnn4JT798wFRoSQ?pwd=h527](https://pan.baidu.com/s/1hlTEJXgVYTQfrrMBXHe-RA?pwd=s8hr]) and load the necessary R packages.
+Download sample files via this [Baidu Netdisk page]([https://pan.baidu.com/s/1DmL1MBvDnn4JT798wFRoSQ?pwd=h527](https://pan.baidu.com/s/1hlTEJXgVYTQfrrMBXHe-RA?pwd=s8hr) and load the necessary R packages.
 
 ```R
 #load the necessary R packages
