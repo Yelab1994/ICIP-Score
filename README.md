@@ -26,15 +26,24 @@ library(abess)
 library(iMLGAM)
 #Read the example file
 dat <- qread("ICI cohort gene pairs.qs")
-#the first column is the outcome (with row names as 'res'), and the subsequent columns are features.
+#The first column is the outcome (with row names as 'res'), and the subsequent columns are features.
 for (i in names(dat)) {
   dat[[i]] <- dat[[i]][,-c(1,3,4)]
   colnames( dat[[i]])[1] <- "res"
 }
-#Determine the training set
+#Determining the training set
 trainset <- dat$trainset_7
-#Determine the validation set
+#Determining the validation set
 validationset <- dat$trainset_3
-#Determine the test set 
+#Determining the test set 
 testset <- dat$testset 
+#Feature Selection using ABESS Algorithm
+trainset <- trainset[!is.na(trainset$res),]
+abess_fit <- abess(trainset[,-1], trainset$res,support.size=0:100)
+key_gene <- extract(abess_fit, 5)[4][1]$support.vars
+trainset <- trainset[,c("res",key_gene )]
+validationset  <- validationset [,c("res",key_gene )]
+testset <- testset [,c("res",key_gene )]
+#Constructing Base Learners
+basic_learner_list <- basic_learner(trainingset=trainset , CVnumber=10, Cvrepeats=5, ncore=8)
 ```
