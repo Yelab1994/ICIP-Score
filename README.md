@@ -16,7 +16,7 @@ Make sure you have R and the following packages installed: iMLAGA. Install "iMLA
 ```R
 devtools::install_github("Yelab1994/iMLGAM")
 ```
-##Step 1: Constructing Base Learners
+## Step 1: Constructing Base Learners
 Download sample files via this [Baidu Netdisk page](https://pan.baidu.com/s/1DmL1MBvDnn4JT798wFRoSQ?pwd=h527) and load the necessary R packages.
 
 ```R
@@ -27,7 +27,7 @@ dat <- qread("ICI cohort gene pairs.qs")
 for (i in names(dat)) {
   dat[[i]] <- dat[[i]][,-c(1,3,4)]
   colnames( dat[[i]])[1] <- "res"
-} #Organize the data into the format supported by the iMLGAM package, where the first column is the outcome (with row names as 'res'), and the subsequent columns are features.
+} #the first column is the outcome (with row names as 'res'), and the subsequent columns are features.
 trainset <- dat$trainset_7  #Determine the training set
 validationset <- dat$trainset_3 #Determine the validation set
 testset <- dat$testset  #Determine the test set 
