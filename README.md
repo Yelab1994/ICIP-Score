@@ -15,3 +15,6 @@ Make sure you have R and the following packages installed: iMLAGA. Install "iMLA
 
 ```R
 devtools::install_github("Yelab1994/iMLGAM")
+```
+
+## Prerequisites
