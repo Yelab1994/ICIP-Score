@@ -78,7 +78,7 @@ ga_fit <- GA_train(trainres)
 ```
 
 ## Step 4: Calculating Risk Scores for Each set
-Scoring each set using the formula constructed in Step 3
+Scoring each set using the formula constructed in Step 3.
 ```R
 #Obtaining the evaluation score of the training set
 trainres $riskscore <- predict(ga_fit ,trainres)
